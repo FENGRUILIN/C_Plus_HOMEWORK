@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int BIN,DEC=0;
+	int i;
+	cin>>BIN;
+	for(i=1;BIN!=0;i*=2)
+	{
+		DEC+=BIN%10*i;
+		BIN/=10;
+	}
+	cout<<DEC;
+	return 0;
+}
